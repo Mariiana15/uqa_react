@@ -1,0 +1,132 @@
+button {
+    cursor: pointer;
+  }
+  .chip-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .chip.chip-checkbox > .chip-add-icon::after {
+    content: "+";
+  }
+  .chip.chip-checkbox.active > .chip-add-icon::after {
+  
+    content:"✓"
+  }
+  .chip > * {
+    margin-right: 20%;
+    margin-left: -2px;
+    color: #000000;
+    align-self: center;
+    font-size: 10px;
+  }
+  .chip input {
+    display: none;
+   
+  }
+  .chip.chip-checkbox,
+  .chip.chip-toggle,
+  .chip.clickable {
+    cursor: pointer;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    
+  }
+  .chip.active {
+    background-color: #35858B;;
+    border-color:  #35858B;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+  }
+  .chip:hover,
+  .chip:focus {
+    background-color: #35858B;
+  }
+  .chip:active:focus {
+    background-color: #d3d2d2;
+  }
+  .chip button {
+    border: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    background: none;
+    display: inline-flex;
+    
+  }
+  .chip {
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid #d3d2d2;
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 6px 4px 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    
+    width: 10em;
+  }
+  .chip i.material-icons {
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+     color: #fff;
+  }
+  
+  .form_buttons {
+    width: 20px;
+  }
+  
+  .form_HU {
+    margin-top: 10%;
+  }
+  .form_HU_1 {
+    margin-bottom: 2em;
+  }
+  
+  .padding-center-lef {
+    margin-top: 5%;
+  }
+  .form_menu_tech {
+    margin-top: 1%;
+    margin-bottom: 2%;
+    .title-form {
+      color: var(--primary);
+      position: relative;
+      margin-bottom: 0.5em;
+      font-weight: bold;
+      font-size: 27px;
+      text-align: center;
+    }
+    .form-label {
+      font-weight: 400;
+      font-size: var(--size);
+      color: rgb(242, 238, 245);
+    }
+  }
+  
+  .form_tech_sec {
+    margin-top: 2em;
+  }
+  
+  .form_sub_menu {
+    .title-form {
+      color: var(--primary);
+      position: relative;
+      margin-bottom: 2em;
+      font-weight: bold;
+      text-align: center;
+    }
+    .form-label {
+      font-weight: 400;
+      font-size: var(--size);
+      color: rgb(242, 238, 245);
+    }
+    .control_integration {
+      visibility: visible;
+    }
+  }
+  
+  .control_integration {
+    visibility: hidden;
+  }
+  

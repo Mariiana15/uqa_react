@@ -1,0 +1,210 @@
+.uqa-header-data-name {
+    font-size: 10px;
+    color: #a7bcf5;
+}
+
+.uqa-card-metrics-met {
+    height: 150px;
+}
+.uqa-card-metric {
+    height: 60px;
+}
+.uqa-card-title-metric {
+    margin-left: -25px;
+}
+.uqa-card-m {
+    width: 45px;
+    margin-top: -10px;
+    margin-left: -5px;
+    height: 45px;
+    background: linear-gradient(109.6deg, rgb(31, 179, 237) 11.2%, rgb(17, 106, 197) 91.1%);
+}
+
+.uqa-card-i {
+    margin-top: -6px;
+    margin-left: -3px;
+    color: #a7bcf5;
+}
+
+.uqa-card-l {
+    margin-left: 6px;
+    margin-top: -14px;
+    color: #a7bcf5;
+    font-size: larger;
+    font-weight: 900;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.uqa-card-t {
+    font-size: 7px;
+    margin-top: -10px;
+    color: #a7bcf5;
+}
+.uqa-card-m-s{
+    margin-top: 1em;
+}
+
+.uqa-card-l_2{
+
+    margin-top: -14px;
+    color: #a7bcf5;
+    font-weight: 900;
+    font-size: 13px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.uqa-card-m_2 {
+    width: 45px;
+    margin-top: -10px;
+    margin-left: -5px;
+    height: 45px;
+    background: radial-gradient(40px at -0.1% 47%, rgb(53, 92, 125) 0%, rgba(108, 91, 123, 0.113) 51.2%, rgba(192, 108, 132, 0.155) 100.2%);
+}
+
+
+// Geometry!
+$pi: 3.14159265359;
+
+@function makeCircleDiameter($radius) {
+  @return ($radius*2);
+}
+
+@function makeCircleWidthHeight($radius, $padding) {
+  @return ($radius*2)+$padding*3;
+}
+
+@function makeCircleCircumfrence($diameter) {
+  @return $diameter * $pi;
+}
+
+// Progress Circles
+$progress-circle-radius: 90px;
+$progress-circle-padding: 0px;
+
+.c-progress-circle {
+  display: block;
+  width: makeCircleWidthHeight($progress-circle-radius, $progress-circle-padding);
+  height: makeCircleWidthHeight($progress-circle-radius, $progress-circle-padding);
+  margin: 10px auto;
+  border-radius: 50%;
+  position: relative;
+  transform: rotate(271deg);
+  box-shadow: 0px 0px 50px 0px rgba(126,143,255,1);
+  
+  &::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    font-family: sans-serif;
+    content: attr(data-percentage);
+    font-size: 60px;
+    transform: rotate(90deg);
+    color: #fff;
+  }
+  
+  .c-progress-circle__svg {
+    width: 100%;
+    height: 100%;
+
+    circle {
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset 1s linear;
+      stroke-width: 4px;
+      stroke-linecap: round;
+    }
+
+    .c-progress-circle__bar {
+      fill: transparent;
+      stroke-dashoffset: makeCircleCircumfrence(makeCircleDiameter($progress-circle-radius));
+      stroke-dasharray: makeCircleCircumfrence(makeCircleDiameter($progress-circle-radius));
+    }
+  }
+  
+
+  // Smaller Version with Image
+  $progress-circle--sm-radius: 40px;
+  $progress-circle--sm-padding: 5px;
+  
+  &.c-progress-circle--sm {
+    width: makeCircleWidthHeight($progress-circle--sm-radius, $progress-circle--sm-padding);
+    height: makeCircleWidthHeight($progress-circle--sm-radius, $progress-circle--sm-padding);
+    box-shadow: none;
+    
+    &::after {
+      font-size: 40px;
+    }
+      
+    .c-progress-circle__bar {
+      stroke-width: 3px;
+      stroke-dashoffset: makeCircleCircumfrence(makeCircleDiameter($progress-circle--sm-radius));
+      stroke-dasharray: makeCircleCircumfrence(makeCircleDiameter($progress-circle--sm-radius));
+    }
+  }
+} 
+
+.uqa-card-coverage{
+    font-size: 15px;
+    color: #a7bcf5;
+    margin-top: -70px;
+    margin-left: 60px;
+    font-weight: 900;
+}
+
+.uqa-card-metric-coverage-zoom{
+    transform: scale(0.65);
+    margin-top: -24px;
+    margin-left: -15px;
+}
+.uqa-card-tests-total{
+    color: #a7bcf5;
+    font-family: fangsong;
+    font-size: 18px;
+    margin-top: -10px;
+}
+
+.bh_fa_solid_play{
+    font-size: 86px;
+    position: relative;
+    color: #a7bcf5;
+    top: -1.6em;
+    left: 0.7em;
+    animation: float 6s ease-in-out infinite;
+}
+
+.uqa-card-coverage_{
+  position: relative;
+  top: -4.4em;
+  left: -0.7em;
+}
+
+.bh_fa_solid_time{
+  font-size: 86px;
+  position: relative;
+  color: #a7bcf5;
+  top: -1.6em;
+  left: 0.5em;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-5px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+
+.uqa-poimter{
+  cursor: pointer;
+}

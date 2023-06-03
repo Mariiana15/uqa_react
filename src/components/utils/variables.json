@@ -1,0 +1,30 @@
+{
+    "bbdd": [
+        "Datos sensibles estructurados",
+        "Datos sensibles no estrucutrados",
+        "Datos no sensibles estructurados",
+        "Datos no sensibles no estructurados",
+        "No uso de datos"
+    ],
+    "infra": [
+        "Queues",
+        "Docker o Containers",
+        "App Movil",
+        "Web",
+        "Scripts",
+        "Queries",
+        "AI",
+        "Machine Learning"
+    ],
+    "language": [
+        "Ruby",
+        "Python",
+        "Java",
+        "PHP",
+        "Go",
+        "Javascript",
+        "Net Core",
+        "React",
+        "Angular"
+    ]
+}

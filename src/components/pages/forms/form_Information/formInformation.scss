@@ -1,0 +1,96 @@
+/* Lazy Load Styles */
+.card-image {
+	display: block;
+	min-height: 12rem; /* layout hack */
+	background: #fff center center no-repeat;
+	background-size: cover;
+	
+}
+
+.card-image > img {
+	display: block;
+	width: 100%;
+	
+}
+
+.card-image.is-loaded {
+	filter: none; /* remove the blur on fullres image */
+	transition: filter 1s;
+}
+
+
+.card-list {
+	display: block;
+	margin: 1rem auto;
+	padding: 0;
+	font-size: 0;
+	text-align: center;
+	list-style: none;
+}
+
+.card__ {
+	display: inline-block;
+	width: 100%;
+	max-width: 12rem;
+	margin: 1rem;
+    border-radius: 15px;
+	font-size: 1rem;
+	text-decoration: none;
+	overflow: hidden;
+	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.card__:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
+
+.card-description {
+	display: block;
+	padding: 1em 0.5em;
+	color: #515151;
+	text-decoration: none;
+}
+
+.card-description > h2 {
+	margin: 0 0 0.5em;
+}
+
+.card-description > p {
+	margin: 0;
+}
+
+.uqa-card-style{
+    background-image: url(https://salesdorado.com/wp-content/uploads/2022/07/Asana-logo-e1657292223430.png);
+    background-position:  center;
+    background-size: 120px 80px;
+}
+.uqa-form-h3{
+    color: #d3dfff;
+}
+.uqa-form-btn{
+	color: #d3dfff;
+	margin-top: 2em;
+}
+.uqa-btn-on{
+	visibility: visible;
+	margin-top: 2em;
+}
+
+.uqa-btn-off{
+	visibility: hidden;
+}
+.uqa-loader-on{
+	visibility: visible;
+}
+.uqa-loader-off{
+	visibility: hidden;
+}
+
+.uqa-form-spaces{
+	color: #d3dfff;
+}
+.uqa_color_text{
+	color: #d3dfff;
+}

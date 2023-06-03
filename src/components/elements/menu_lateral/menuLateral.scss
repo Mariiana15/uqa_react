@@ -1,0 +1,170 @@
+.menu {
+    position: fixed;
+    max-width: 100%;
+    width: 270px;
+    height: 100vh;
+    left: 0em;
+    background: radial-gradient(circle at 74.2% 50.9%, rgb(14, 72, 222) 5.2%, rgb(3, 22, 65) 75.3%);
+    color: #fff;
+    transition: 0.6s;
+    margin-right: 3em;
+    box-shadow: 5px 10px 0.5em #01113b;
+}
+.menu.active {
+    width: 70px;
+    overflow-x: hidden;
+    transition: 0.6s;
+}
+
+.uqa-menu-logo {
+    margin-left: 15%;
+    font-family: fangsong;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #cad6f8;
+}
+.uqa-menu-li {
+    width: 15em;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo i {
+    width: 50px;
+}
+
+.menu-icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu.active .logo {
+    transition: 0.6s;
+}
+.menu.active #botao {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    transition: 0.6s;
+}
+
+.menu-icon i:hover {
+    color: blue;
+}
+
+.menu ul {
+    margin-top: 30px;
+    position: relative;
+    left: -1em;
+    border-radius: 5em;
+}
+.menu li {
+    border-radius: 1em;
+}
+.menu li i {
+    min-width: 50px;
+    text-align: center;
+    color: #4fbdba;
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 20px;
+    display: block;
+}
+
+.menu.active ul {
+    background: blue;
+    transition: 0.6s;
+}
+.menu.active li {
+    padding: 20px 0;
+    text-align: center;
+    transition: 0.6s;
+}
+.menu.active li i {
+    padding: 10px;
+    transition: 0.6s;
+}
+
+.menu ul li:hover {
+    background: linear-gradient(180.2deg, rgb(3, 22, 65), rgba(3, 22, 65, 0.374));
+    color: #4fbdba;
+}
+
+.uqa-card-footer {
+    padding: 4rem 7%;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0;
+    font-family: -apple-system, "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica", "Arial", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.uqa-card-menu {
+    height: 150px;
+    background-image:  url('https://images.pexels.com/photos/6562811/pexels-photo-6562811.jpeg?auto=compress&cs=tinysrgb&w=300');
+}
+.uqa-card-menu-line {
+    width: 80%;
+    margin-left: 10%;
+    background: linear-gradient(109.6deg, rgb(180, 214, 242) 11.2%, rgba(72, 67, 221, 0.72) 100.2%);
+    height: 2px;
+    border-radius: 5px;
+}
+
+.uqa-menu-label-test {
+    margin-left: 10%;
+    font-family: fangsong;
+    font-size: medium;
+    font-weight: 900;
+}
+
+.uqa-menu-din-option {
+    font-size: 13px;
+    width: 15em;
+    overflow: hidden;
+    height: 15px;
+}
+.uqa-card-menu-icon {
+    background: white;
+    height: 40px;
+    border-radius: 1em;
+    margin-left: 0px;
+}
+.uqa-card-menu-i-color {
+    color: white;
+    margin-left: 8px;
+}
+.uqa-card-menu-i-cont {
+    height: 25px;
+    border-radius: 5em;
+    background: #4fbdba;
+    width: 25px;
+    margin-left: -8px;
+    margin-top: -10px;
+}
+.uqa-menu-help-label {
+    color: #072227;
+    font-family: fangsong;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-weight: 800;
+}
+
+.uqa-menu-help-text {
+    color: #072227;
+    margin-top: -17px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.uqa-menu-help-btn{
+    margin-top: -30px;
+    color: #01113b;
+}

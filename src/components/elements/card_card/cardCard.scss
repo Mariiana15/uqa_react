@@ -1,0 +1,77 @@
+.uqa-card-card-img {
+    height: 130px;
+    width: 280px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.uqa-card-unity {
+    width: 280px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.uqa-card-card-space {
+    margin-top: 0.5em;
+}
+.uqa-card-card-number-us {
+    font-size: 10px;
+    margin-left: 10px;
+    color: #a7bcf5;
+}
+.uqa-card-card-title {
+    margin-top: -15px;
+    margin-left: 10px;
+    font-family: fangsong;
+    font-size: 16px;
+    font-weight: 300;
+    color: #18d3e0;
+}
+.uqa-card-card-text {
+    margin-top: -15px;
+    margin-left: 10px;
+    font-size: 12px;
+    height: 65px;
+    overflow-y: auto;
+    color: #d3dfff;
+}
+.uqa-card-card-text_ {
+    height: 200px;
+    margin-left: 15px;
+}
+.uqa-card-card-btn {
+    color: #d3dfff;
+    background: #a7bcf510;
+    font-size: 8px;
+}
+.uqa-card-card-btn_ {
+    color: #d3dfff;
+    font-size: 18px;
+    background: #06226f;
+}
+.row:after {
+    display: table;
+    clear: both;
+}
+.row_cards {
+    width: 100%;
+}
+
+.horizontal-scrollable {
+    overflow-x: hidden;
+}
+.card_container {
+    width: 300px;
+}
+
+.uqa-selection_{
+    background: #020c23;
+}
+
+div::-webkit-scrollbar {
+    display: none;
+   }
+   div:hover::-webkit-scrollbar {
+    display: initial;
+   }
+   div::-webkit-scrollbar-thumb {
+   background-color: rgba(0, 153, 204, 0.076);
+   }
