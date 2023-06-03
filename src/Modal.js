@@ -15,8 +15,6 @@ class modalForm extends React.Component {
     this.setState({ show: this.props.modalOpen !== undefined ? this.props.modalOpen: this.props.active });
   }
 
-
-
   render() {
     return (
       <div>
